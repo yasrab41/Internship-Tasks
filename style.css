@@ -1,0 +1,498 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.navbar-brand{
+    font-family: cursive;
+    color: whitesmoke;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #00766c;
+}
+
+
+.background-banner{
+    width: 100%;
+    height: 100vh;
+    /* background: url("images/fashion6.jpeg"); */
+
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)) , url("images/fashion6.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.size{
+    font-size: 21px !important;
+    color: white !important;
+
+}
+.nav-link{
+    color: white !important;
+    margin-left: 22px;
+}
+
+.center{
+    margin-top:400px;
+    margin-left: 100px;
+    /* color: #20c997; */
+}
+
+.navbar-toggler{
+    color: aliceblue !important;
+}
+
+.heading1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.line {
+  height: 2px;
+  width: 30%;
+  background-color: white;
+  display: block;
+  text-align: center;
+  align-self: center;
+  box-shadow: -1px -1px 5px gray;
+}
+
+
+.row .col-5 p{
+    font-size: 18px;
+}
+
+.fa-umbrella{
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .fa-umbrella{
+        text-align: center;
+        max-width: 0 auto;
+        width: 100%;
+    }
+  }
+
+
+.card{
+    display: flex;
+}
+
+.card1{
+  display: flex;
+
+  box-shadow: 2px 2px 5px grey;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card:hover{
+    transform: scale(1.05) !important; 
+    border: 2px solid #1fa67a;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .card {
+      align-items: center;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .card {
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .card {
+      align-items: center !important;
+      justify-content: center !important;
+      width: 90%;
+    }
+  }
+.card-title{
+    color: #1fa67a;
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-text{
+    font-size: 16px;
+}
+
+[aos="fade"] {
+    opacity: 0;
+    transition-property: opacity;
+  }
+  
+  [aos="fade"].aos-animate {
+    opacity: 1;
+  }
+
+  .card:hover{
+    box-shadow: 6px 0px 5px grey !important;
+    border: none !important;
+    transform: scale(1.005) !important;
+  }
+
+  .iconSizing{
+      font-size:35px;color:gainsboro;text-shadow:2px 2px 4px #000000; text-align: center;
+      background-color: #1fa67a;
+      color: white;
+      padding: 20px;
+      border-radius: 50%;
+  }
+
+ .card button:hover{
+    box-shadow: 6px 0px 5px grey !important;
+    border: none !important;
+    transform: scale(1.005) !important;
+    background-color: #1fa67a;
+  }
+
+  .themeColor{
+    background-color: #1fa67a;
+  }
+
+
+
+  
+.owl-carousel .owl-nav button.owl-prev{
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  position:absolute;
+  top:45%;
+  /* transform: translate(-50%); */
+  font-size: 30px;
+  font-weight: bold;
+  width: 30px;
+  height:50px;
+  color:white;
+  left: 1px;
+
+}
+
+
+
+.owl-carousel .owl-nav button.owl-next
+{
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  position:absolute;
+  top: 45%;
+  /* transform: translate(-50%); */
+  right:1px;
+  font-size: 30px;
+  font-weight: bold;
+  width: 30px;
+  height:50px;
+  color:white;
+}
+
+
+.parent-item{
+  display: flex;
+}
+
+
+.team {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.team:hover .image {
+  opacity: 0.3;
+}
+
+.team:hover .middle {
+  opacity: 1;
+
+}
+
+.text {
+  font-size:25px;
+  text-shadow:2px 2px 4px #000000; 
+  text-align: center;
+  color: #1fa67a;
+  padding: 6px 5px;
+}
+
+.team_members{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* Life of zippy */
+
+
+.gallery_img {
+  vertical-align: middle;
+}
+
+.zippy_life {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+  
+
+  .signUp_img{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url("images/fashion3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    background-size: cover;
+   }
+
+   /* Contact */
+
+   /* .blue-bg{
+    background: #25274d;
+
+   } */
+  
+.contact-bg{
+    background: #ff9b00;
+    
+}
+.contact-info{
+    margin-top:5%;
+}
+.contact-info img{
+    width: 100px;
+}
+.contact-info h2{
+    margin-bottom: 5%;
+    font-weight: bold;
+    font-family: cursive !important;
+}
+.contact-bg-info{
+    background: #fff;
+    border: 5px solid #ff9b00; 
+    padding: 3%;
+
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+
+.yellowcolor{
+  background-color: #ffa500;
+}
+
+@media only screen and (max-width: 800px) {
+  .map-resize {
+   height: 500px !important;
+  }
+}
+
+/* Footer */
+
+.footer-bgpic{
+  background-color: #1fa67a;
+  color: whitesmoke;
+}
+
+.loghead{
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+
+
+
+
+
+
+
+.contactdiv{
+  background-color: rgb(14, 12, 12);
+  color:whitesmoke;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.contacts{
+  width: 700px;
+  margin-right:10px;
+  margin-left:10px;
+  padding-top:15px;
+}
+
+
+
+.connect-us-li{
+  display:inline-flex;
+  list-style: none;
+  padding:15px;
+ margin:10px;
+}
+
+.fi{
+  background-color: #006961;
+  color: whitesmoke !important;
+  font-size: 25px;
+  padding:10px;
+  border-radius: 50px;
+}
+
+.line {
+  height: 2px;
+  width: 30%;
+  background-color: gray;
+  display: block;
+  text-align: center;
+  align-self: center;
+  box-shadow: -1px -1px 5px gray;
+}
+
+h2,h1 {
+  text-shadow: 2px 2px 2px #00766c;
+}
+
+.ul-1{
+        list-style: none;
+    }
+
+.li-1{
+        display: block;
+        padding: 10px;
+}
+.faa{
+  color:#00766c !important;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
